@@ -5,7 +5,7 @@ import 'app_colors.dart';
 class AppTheme {
   static final theme = ThemeData(
     scaffoldBackgroundColor: AppColors.backgroundColor,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       color: AppColors.accentColorDark,
     ),
     hintColor: AppColors.accentColor,

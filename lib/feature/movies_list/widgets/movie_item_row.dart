@@ -1,4 +1,3 @@
-
 import 'package:filmguru/data/model/movie_item.dart';
 import 'package:filmguru/theme/app_colors.dart';
 import 'package:filmguru/theme/app_dimensions.dart';
@@ -7,7 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MovieItemRow extends StatelessWidget {
-  MovieItemRow(this._movie);
+  const MovieItemRow(this._movie, {super.key});
 
   final MovieItem _movie;
 
@@ -16,7 +15,7 @@ class MovieItemRow extends StatelessWidget {
     return _body(context);
   }
 
-  Widget _body(BuildContext context) => Container(
+  Widget _body(BuildContext context) => SizedBox(
         height: AppDimensions.movieListItemPosterHeight,
         child: Stack(
           children: <Widget>[
